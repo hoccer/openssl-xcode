@@ -157,6 +157,75 @@
 			};
 			name = Release;
 		};
+		E91168E619B62E9A003D0C25 /* DebugClassic */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"ARCHS[sdk=iphoneos*]" = (
+					armv7s,
+					armv7,
+				);
+				"ARCHS[sdk=macosx*]" = (
+					x86_64,
+					i386,
+				);
+				COPY_PHASE_STRIP = NO;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = "$(PLATFORM_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator macosx iphoneos";
+			};
+			name = DebugClassic;
+		};
+		E91168E719B62E9A003D0C25 /* DebugClassic */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = /usr/local/lib;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = crypto;
+				SDKROOT = iphoneos;
+			};
+			name = DebugClassic;
+		};
+		E91168E819B62EB4003D0C25 /* ReleaseClassic */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"ARCHS[sdk=iphoneos*]" = (
+					armv7s,
+					armv7,
+				);
+				"ARCHS[sdk=macosx*]" = (
+					x86_64,
+					i386,
+				);
+				COPY_PHASE_STRIP = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = "$(PLATFORM_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator macosx iphoneos";
+			};
+			name = ReleaseClassic;
+		};
+		E91168E919B62EB4003D0C25 /* ReleaseClassic */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = crypto;
+				SDKROOT = iphoneos;
+				ZERO_LINK = NO;
+			};
+			name = ReleaseClassic;
+		};
 		E95175FB1911408E00EFD1C6 /* DebugDev */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -233,8 +302,10 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9069D1300FCE340B0042E34C /* Debug */,
+				E91168E619B62E9A003D0C25 /* DebugClassic */,
 				E95175FB1911408E00EFD1C6 /* DebugDev */,
 				9069D1310FCE340B0042E34C /* Release */,
+				E91168E819B62EB4003D0C25 /* ReleaseClassic */,
 				E95175FD1911409D00EFD1C6 /* ReleaseDev */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -244,8 +315,10 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9069D28D0FCE659B0042E34C /* Debug */,
+				E91168E719B62E9A003D0C25 /* DebugClassic */,
 				E95175FC1911408E00EFD1C6 /* DebugDev */,
 				9069D28E0FCE659B0042E34C /* Release */,
+				E91168E919B62EB4003D0C25 /* ReleaseClassic */,
 				E95175FE1911409D00EFD1C6 /* ReleaseDev */,
 			);
 			defaultConfigurationIsVisible = 0;
